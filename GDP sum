@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Consumption: ");
+        double c = sc.nextDouble();
+
+        System.out.print("Enter Investment: ");
+        double i = sc.nextDouble();
+
+        System.out.print("Enter Government Spending: ");
+        double g = sc.nextDouble();
+
+        System.out.print("Enter Net Exports: ");
+        double nx = sc.nextDouble();
+
+        double gdp = c + i + g + nx;
+
+        System.out.println("GDP = " + gdp);
+    }
+}
